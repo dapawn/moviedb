@@ -34,7 +34,7 @@ export const useHomeFetch = () => {
         setLoading(false);
     };
     //Initial Render
-    useEffect( () => { fetchMovies(4) }, []);
+    useEffect( () => { fetchMovies(1) }, []);
 
     return {state, loading, error};
 }
