@@ -28,14 +28,17 @@ export const useHomeFetch = () => {
                 results: page > 1 ? [...prev.results, ...movies.results] : [...movies.results] 
             }));
   
-        } catch {
+        } catch (error) {
           setError(true);
         }
   
         setLoading(false);
     };
-    //Initial Render
-    useEffect( () => { fetchMovies(1) }, []);
+    //Initial Render and Search
+    useEffect( () => { 
+        setState(initialState);
+        fetchMovies(1, searchTerm);
+    }, [searchTerm]);
 
-    return {state, loading, error, setSearchTerm};
-}
+    return {state, loading, error, searchTerm, setSearchTerm};
+};

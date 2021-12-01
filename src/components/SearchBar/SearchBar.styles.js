@@ -26,7 +26,7 @@ export const Content = styled.div`
   }
 
   input {
-      font-size: 20px;
+      font-size: 28px;
       position: absolute;
       left: 0;
       margin: 8px 0;
@@ -35,7 +35,7 @@ export const Content = styled.div`
       width: 95%;
       background: transparent;
       height: 40px;
-      color: var(--white)
+      color: var(--white);
 
       :focus {
           outline: none;
