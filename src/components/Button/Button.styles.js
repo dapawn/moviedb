@@ -9,7 +9,7 @@ export const Wrapper = styled.button`
   border-radius: 30px;
   color: var(--white);
   border: 0;
-  font-size: var(--fontBig);
+  font-size: var(--fontL);
   margin: 20px auto;
   transition: all 0.3s;
   outline: none;
